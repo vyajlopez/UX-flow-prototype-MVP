@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Pawpaw - Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background:  #1e1e1e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .smartphone-outline {
+      width: 360px;
+      height: 740px;
+      background: #000;
+      border: 12px solid #222;
+      border-radius: 60px;
+      padding: 12px;
+      box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .camera-notch {
+      width: 60px;
+      height: 10px;
+      background: #222;
+      border-radius: 5px;
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .smartphone-screen {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border-radius: 45px;
+      padding: 60px 20px 20px 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+      overflow-x: hidden;
+      position: relative;
+    }
+    .login-box {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .login-box h1 {
+      margin-bottom: 1.5rem;
+      color: #00A86B;
+    }
+    .login-box input[type="email"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+    }
+    .login-box button {
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      background: #00A86B;
+      color: white;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="smartphone-outline">
+    <div class="camera-notch"></div>
+    <div class="smartphone-screen">
+      <div class="login-box">
+        <h1>Dr. Pawpaw</h1>
+        <form action="pawpaw home.html">
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

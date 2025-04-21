@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointments</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    html, body { margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; background: #1e1e1e; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    .smartphone-outline { width: 360px; height: 740px; background: #000; border: 12px solid #222; border-radius: 60px; padding: 12px; box-shadow: 0 0 60px rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; position: relative; }
+    .camera-notch { width: 60px; height: 10px; background: #222; border-radius: 5px; position: absolute; top: 8px; left: 50%; transform: translateX(-50%); }
+    .smartphone-screen { width: 100%; height: 100%; background: #fff; border-radius: 45px; padding: 60px 20px 20px 20px; box-sizing: border-box; overflow-y: auto; }
+    h2 { color: #00A86B; text-align: center; margin-bottom: 1rem; }
+    .appointment { background: #f9f9f9; padding: 1rem; border-radius: 10px; margin-bottom: 1rem; }
+    .appointment h4 { margin: 0; color: #444; }
+    .appointment p { margin: 0.25rem 0; color: #666; }
+    .nav-bar { position: absolute; bottom: 0; left: 0; right: 0; height: 60px; border-top: 1px solid #ccc; background: #f9f9f9; display: flex; justify-content: space-around; align-items: center; border-bottom-left-radius: 45px; border-bottom-right-radius: 45px; }
+    .nav-bar a { color: #555; font-size: 1.2rem; }
+    .nav-bar a.active { color: #00A86B; }
+  </style>
+</head>
+<body>
+  <div class="smartphone-outline">
+    <div class="camera-notch"></div>
+    <div class="smartphone-screen">
+      <h2>Appointments</h2>
+      <div class="appointment">
+        <h4>Vet Check-Up</h4>
+        <p>Date: April 25, 2025</p>
+        <p>Time: 3:00 PM</p>
+        <p>Clinic: ABC Animal Hospital</p>
+        <p>Vet: Dr. John Smith</p>
+      </div>
+      <div class="appointment">
+        <h4>Vaccination</h4>
+        <p>Date: May 15, 2025</p>
+        <p>Time: 11:00 AM</p>
+        <p>Clinic: QC Pet Hospital</p>
+        <p>Vet: Dr. Lea James</p>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <a href="pawpaw home.html"><i class="fas fa-home"></i></a>
+      <a href="mypets.html"><i class="fas fa-paw"></i></a>
+      <a href="#" class="active"><i class="fas fa-calendar-check"></i></a>
+      <a href="#"><i class="fas fa-user"></i></a>
+    </div>
+  </div>
+</body>
+</html>
